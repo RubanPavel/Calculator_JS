@@ -1,0 +1,55 @@
+body {
+  background-color: blanchedalmond;
+}
+.wrapper {
+  background-color: aqua;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+  width: 500px;
+  height: 300px;
+}
+.buttons {
+}
+
+.buttonsStyle {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonMinus {
+  width: 30px;
+  height: 30px;
+  border: 2px dotted green;
+}
+.buttonPlus {
+  width: 30px;
+  height: 30px;
+  border: 2px dotted green;
+}
+.buttonMultiply {
+  width: 30px;
+  height: 30px;
+  border: 2px dotted green;
+}
+.buttonDivide {
+  width: 30px;
+  height: 30px;
+  border: 2px dotted green;
+}
+
+.inputs {
+  padding-top: 30px;
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.number1 {
+}
+.number2 {
+}
