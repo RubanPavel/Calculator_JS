@@ -14,24 +14,34 @@ function getNumber2() {
   return (number2 = Number(inputTwo.value));
 }
 
+function newOperation(whatSimbol) {
+  if (whatSimbol === "-") {
+    var result = getNumber1() - getNumber2();
+  } else if (whatSimbol === "+") {
+    var result = getNumber1() + getNumber2();
+  } else if (whatSimbol === "*") {
+    var result = getNumber1() * getNumber2();
+  } else if (whatSimbol === "/") {
+    var result = getNumber1() / getNumber2();
+  } else {
+    window.alert("warning!!!!!");
+  }
+  window.alert(result);
+}
 function onButtonMinusClick() {
-  var minus = getNumber1 - getNumber2;
-  window.alert(minus);
+  newOperation("-");
 }
 
 function onButtonPlusClick() {
-  var summ = getNumber1 + getNumber2;
-  window.alert(summ);
+  newOperation("+");
 }
 
 function onButtonMultiplyClick() {
-  var multiply = getNumber1 * getNumber2;
-  window.alert(multiply);
+  newOperation("*");
 }
 
 function onButtonDivideClick() {
-  var divide = getNumber1 / getNumber2;
-  window.alert(divide);
+  newOperation("/");
 }
 
 buttonMinus.addEventListener("click", onButtonMinusClick);
