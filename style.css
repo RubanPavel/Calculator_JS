@@ -10,10 +10,12 @@ body {
   height: 300px;
 }
 .buttons {
+  border-bottom: 2px solid green;
+  margin: 20px;
 }
 
 .buttonsStyle {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 30px;
   margin: 0 auto;
   width: 250px;
@@ -21,25 +23,12 @@ body {
   justify-content: space-between;
 }
 
-.buttonMinus {
-  width: 30px;
-  height: 30px;
-  border: 2px dotted green;
-}
-.buttonPlus {
-  width: 30px;
-  height: 30px;
-  border: 2px dotted green;
-}
-.buttonMultiply {
-  width: 30px;
-  height: 30px;
-  border: 2px dotted green;
-}
+.buttonMinus,
+.buttonPlus,
+.buttonMultiply,
 .buttonDivide {
   width: 30px;
   height: 30px;
-  border: 2px dotted green;
 }
 
 .inputs {
