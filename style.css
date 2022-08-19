@@ -2,6 +2,7 @@ body {
   background-color: blanchedalmond;
 }
 .wrapper {
+  border-radius: 15px;
   background-color: aqua;
   margin: 0 auto;
   text-align: center;

@@ -28,23 +28,14 @@ function newOperation(whatSimbol) {
   }
   window.alert(result);
 }
-function onButtonMinusClick() {
-  newOperation("-");
+
+function onButtonClick(eventObject) {
+  let clickElement = eventObject.currentTarget;
+  let whatSimbol = clickElement.innerText;
+  newOperation(whatSimbol);
 }
 
-function onButtonPlusClick() {
-  newOperation("+");
-}
-
-function onButtonMultiplyClick() {
-  newOperation("*");
-}
-
-function onButtonDivideClick() {
-  newOperation("/");
-}
-
-buttonMinus.addEventListener("click", onButtonMinusClick);
-buttonPlus.addEventListener("click", onButtonPlusClick);
-buttonMultiply.addEventListener("click", onButtonMultiplyClick);
-buttonDivide.addEventListener("click", onButtonDivideClick);
+buttonMinus.addEventListener("click", onButtonClick);
+buttonPlus.addEventListener("click", onButtonClick);
+buttonMultiply.addEventListener("click", onButtonClick);
+buttonDivide.addEventListener("click", onButtonClick);
